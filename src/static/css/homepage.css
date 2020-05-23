@@ -1,14 +1,14 @@
-.header {
+.asd {
     padding: 60px;
     text-align: center;
     background: #6C7A89;
     color: white;
 }  
 
-.header > .title {
+.asd > .title {
     font-size: 50px;
 }
-.header > .caption {
+.asd > .caption {
     font-size: 20px;
 }
 
