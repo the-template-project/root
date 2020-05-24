@@ -1,15 +1,15 @@
-.asd {
-    padding: 60px;
+.header-text-container {
+    padding: 5%;
     text-align: center;
-    background: #6C7A89;
+    background: #343a40;
     color: white;
 }  
 
-.asd > .title {
-    font-size: 50px;
+.header-text-container > h1 {
+    font-size: 3em;
 }
-.asd > .caption {
-    font-size: 20px;
+.header-text-container > p {
+    font-size: 1em;
 }
 
 .social-icons-container{
