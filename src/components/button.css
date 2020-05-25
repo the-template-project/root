@@ -9,7 +9,7 @@
     /*General Button Format*/
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -35,6 +35,8 @@
 
 /*Sizing for buttons from BTNSIZE array in Button.jsx file*/
 .btn--medium {
+    height: 70px;
+    width: 70px;
     padding: 10px 10px;
     font-size: 18px;
 }

@@ -21,14 +21,24 @@ function App() {
         >
           Learn React
         </a>
-        <Button>DOWNLOAD TEST</Button>
+
+        {/*download button, redownloads download icon on click*/}
+        <Button>
+        <a href='download_icon.png' download>
+        <img src="download_icon.png" alt=""/>
+        </a>
+        </Button>
+
+        {/*preview button, redirects to project GitHub page*/}
         <br></br>
         <Button
-        onClick={() => {console.log('What Am I Doing')}}
-        type="button"
         buttonStyle="btn--preview--solid">
-          PREVIEW TEST
+          <a href="https://github.com/the-template-project/root">
+          <img src="preview_icon.png" alt=""/>
+          </a>
         </Button>
+
+
       </header>
     </div>
   );
