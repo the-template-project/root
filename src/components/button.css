@@ -1,0 +1,45 @@
+:root {
+    /*Colors can be asigned per variable name here*/
+    --white: #ffffff;
+    --download: #37c8ab;
+    --preview: #5fd35f;
+}
+
+.btn {
+    /*General Button Format*/
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    /*Button interaction upon hovering*/
+    transform: translateY(-3px);
+}
+
+/*Styling for buttons from BTNSTYLE array in Button.jsx file*/
+.btn--download--solid{
+    background-color: var(--download);
+    color: var(--white);
+    border: none;
+}
+
+.btn--preview--solid{
+    background-color: var(--preview);
+    color: var(--white);
+    border: none;
+}
+
+
+/*Sizing for buttons from BTNSIZE array in Button.jsx file*/
+.btn--medium {
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.btn--small {
+    padding: 8px 8px;
+    font-size: 14px;
+}

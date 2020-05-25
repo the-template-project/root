@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from './components/Button';
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
         >
           Learn React
         </a>
+        <Button>DOWNLOAD TEST</Button>
+        <br></br>
+        <Button
+        onClick={() => {console.log('What Am I Doing')}}
+        type="button"
+        buttonStyle="btn--preview--solid">
+          PREVIEW TEST
+        </Button>
       </header>
     </div>
   );
