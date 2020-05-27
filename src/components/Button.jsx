@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import './button.css';
 
@@ -12,9 +14,9 @@ const BTNSTYLE = [
 Sizing can be created or renamed here*/
 const BTNSIZE = ["btn--medium", "btn--small"]
 
+/**/
 export const Button = ({ 
     children, 
-    type, 
     onClick, 
     buttonStyle, 
     buttonSize}) => {
@@ -31,12 +33,30 @@ export const Button = ({
 
     return(
         <button className={`btn ${checkBTNSTYLE} ${checkBTNSIZE}`} 
-        /*onClick can be called through {() => {function()}} or a custom function from button.js*/
+        /*onClick can be called through {() => {function()}} or a custom function*/
         onClick={onClick} 
-        type={type}
         >
             {children}
         </button>
     )
 };
 
+/*Defualt download button, is set to medium sizing. Needs a file passed in to download
+Use example: <DownloadButton file={"FILE NAME HERE"}></DownloadButton>*/
+export const DownloadButton = ({file}) => {
+    return  <a href={file} download>
+        <Button>
+        <img src="download_icon.png" alt=""/>
+        </Button>
+        </a>
+}
+
+/*Defualt preview button, is set to medium sizing. Needs a page location to direct towards
+Use example: <PreviewButton Page={"https://github.com/the-template-project/root"}></PreviewButton>*/
+export const PreviewButton = ({Page}) => {
+    return  <a href={Page}>
+        <Button buttonStyle="btn--preview--solid">
+        <img src="preview_icon.png" alt=""/>
+        </Button>
+        </a>
+}
