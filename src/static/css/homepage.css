@@ -1,0 +1,26 @@
+.header-text-container {
+    padding: 5%;
+    text-align: center;
+    background: #343a40;
+    color: white;
+}  
+
+.header-text-container > h1 {
+    font-size: 3em;
+}
+.header-text-container > p {
+    font-size: 1em;
+}
+
+.social-icons-container{
+    position:absolute;
+    top:0;
+    right:0; 
+    padding: 20px 10px;
+}
+
+.social-icons-container img{
+    width: 30px;
+    height: auto;  
+    padding-right: 10px
+}   
