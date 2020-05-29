@@ -1,47 +1,50 @@
 :root {
     /*Colors can be asigned per variable name here*/
-    --white: #ffffff;
-    --download: #37c8ab;
-    --preview: #5fd35f;
+    --lightmode: #E9ECEF;
+    --darkmode: #495057;
 }
 
 .btn {
     /*General Button Format*/
-    font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
 }
 
 .btn:hover {
     /*Button interaction upon hovering*/
-    transform: translateY(-3px);
+    transform: translateY(-6px);
 }
 
 /*Styling for buttons from BTNSTYLE array in Button.jsx file*/
-.btn--download--solid{
-    background-color: var(--download);
-    color: var(--white);
+.btn-download-solid{
+    background-color: var(--lightmode);
+    color: white;
     border: none;
 }
 
-.btn--preview--solid{
-    background-color: var(--preview);
-    color: var(--white);
+.btn-preview-solid{
+    background-color: var(--lightmode);
+    color: white;
     border: none;
 }
 
+.btn-darkmode-solid{
+    background-color: var(--darkmode);
+    color: white;
+    border: none;
+}
 
 /*Sizing for buttons from BTNSIZE array in Button.jsx file*/
-.btn--medium {
-    height: 70px;
-    width: 70px;
+.btn-defualt {
+    height: 50px;
+    width: 50px;
     padding: 10px 10px;
     font-size: 18px;
 }
 
-.btn--small {
+.btn-small {
     padding: 8px 8px;
     font-size: 14px;
 }
