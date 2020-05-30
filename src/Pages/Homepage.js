@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import fbIcon from '../static/images/f_logo_RGB-Blue_58.png';
 import twitterIcon from '../static/images/Twitter_Social_Icon_Circle_Color.png';
