@@ -59,7 +59,7 @@ export const DownloadButton = ({ file }) => (
 Use example: <PreviewButton Page={"https://URL-LINK.COM or HTML-PAGE"}></PreviewButton> */
 export const PreviewButton = ({ page }) => (
   <a href={page}>
-    <Button buttonStyle="btn-preview-solid">
+    <Button buttonStyle="btn-preview-solid" target="_blank" rel="noopener noreferrer">
       <img src="preview_icon_Light.png" alt="" height="50%" />
     </Button>
   </a>
@@ -78,7 +78,7 @@ export const DarkmodeDB = ({ file }) => (
 /* Defualt DARKMODE preview button, is set to defualt sizing. Needs a page location to direct toward
 Use example: <DarkmodePB Page={"https://URL-LINK.COM or HTML-PAGE"}></PreviewButton> */
 export const DarkmodePB = ({ page }) => (
-  <a href={page}>
+  <a href={page} target="_blank" rel="noopener noreferrer">
     <Button buttonStyle="btn-darkmode-solid">
       <img src="preview_icon.png" alt="" height="50%" />
     </Button>
@@ -91,7 +91,7 @@ export const SocialButton = ({
   link,
   icon,
 }) => (
-  <a href={link}>
+  <a href={link} target="_blank" rel="noopener noreferrer">
     <Button buttonStyle="btn-social">
       <img src={icon} alt="fb icon" />
     </Button>
