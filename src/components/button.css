@@ -9,12 +9,12 @@
     font-weight: 400;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.6s ease;
+    transition: transform 0.3s ease;
 }
 
 .btn:hover {
     /*Button interaction upon hovering*/
-    transform: translateY(-6px);
+    transform: translateY(-3px);
 }
 
 /*Styling for buttons from BTNSTYLE array in Button.jsx file*/
@@ -33,6 +33,11 @@
 .btn-darkmode-solid{
     background-color: var(--darkmode);
     color: white;
+    border: none;
+}
+
+.btn-social{
+    background-color: inherit;
     border: none;
 }
 

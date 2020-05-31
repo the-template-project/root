@@ -11,6 +11,7 @@ const BTNSTYLE = [
   'btn-download-solid',
   'btn-preview-solid',
   'btn-darkmode-solid',
+  'btn-social',
 ];
 
 /* Button Sizing Array
@@ -79,6 +80,19 @@ export const DarkmodePB = ({ page }) => (
   <a href={page}>
     <Button buttonStyle="btn-darkmode-solid">
       <img src="preview_icon.png" alt="" height="50%" />
+    </Button>
+  </a>
+);
+
+/* Defualt social media button, is set to defualt sizing. Needs a social link & icon
+Use example: <SocialButton link={"https://URL-LINK.COM or HTML-PAGE"}> icon={"image.jpg"}</SocialButton> */
+export const SocialButton = ({
+  link,
+  icon,
+}) => (
+  <a href={link}>
+    <Button buttonStyle="btn-social">
+      <img src={icon} alt="fb icon" />
     </Button>
   </a>
 );
