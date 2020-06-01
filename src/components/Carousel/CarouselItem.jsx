@@ -24,7 +24,6 @@ export default function CarouselItem(props) {
         `,
         'transition': `transform ${animationDuration}s ease, filter ${animationDuration}s ease`
     };
-    console.log(style)
     return (
         <div className={styles['carousel__item']} style={style}>
             {React.cloneElement(children, {
