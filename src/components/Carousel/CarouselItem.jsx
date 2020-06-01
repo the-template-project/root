@@ -1,7 +1,3 @@
-// Lift state up: https://reactjs.org/docs/lifting-state-up.html
-// Refs: https://github.com/facebook/react/issues/14072, https://reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node
-// Source: https://reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node
-
 import React from 'react';
 import styles from './CarouselItem.module.css';
 
