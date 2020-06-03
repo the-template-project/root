@@ -20,13 +20,13 @@
 /*Styling for buttons from BTNSTYLE array in Button.jsx file*/
 .btn-download-solid{
     background-color: var(--lightmode);
-    color: white;
+    color: var(--darkmode);
     border: none;
 }
 
 .btn-preview-solid{
     background-color: var(--lightmode);
-    color: white;
+    color: var(--darkmode);
     border: none;
 }
 
@@ -43,13 +43,8 @@
 
 /*Sizing for buttons from BTNSIZE array in Button.jsx file*/
 .btn-defualt {
-    height: 50px;
-    width: 50px;
-    padding: 10px 10px;
-    font-size: 18px;
-}
-
-.btn-small {
+    height: auto;
+    width: auto;
     padding: 8px 8px;
-    font-size: 14px;
+    font-size: 18px;
 }

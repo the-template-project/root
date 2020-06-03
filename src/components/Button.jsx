@@ -4,6 +4,8 @@
 
 import React from 'react';
 import './button.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload, faLink } from '@fortawesome/free-solid-svg-icons';
 
 /* Button Style Array
 styles can be created and renamed here */
@@ -16,7 +18,7 @@ const BTNSTYLE = [
 
 /* Button Sizing Array
 Sizing can be created or renamed here */
-const BTNSIZE = ['btn-defualt', 'btn-small'];
+const BTNSIZE = ['btn-defualt'];
 
 export const Button = ({
   children,
@@ -50,7 +52,7 @@ Use example: <DownloadButton file={"FILE NAME HERE"}></DownloadButton> */
 export const DownloadButton = ({ file }) => (
   <a href={file} download>
     <Button>
-      <img src="download_icon_Light.png" alt="" height="80%" />
+      <FontAwesomeIcon icon={faDownload} />
     </Button>
   </a>
 );
@@ -60,7 +62,7 @@ Use example: <PreviewButton Page={"https://URL-LINK.COM or HTML-PAGE"}></Preview
 export const PreviewButton = ({ page }) => (
   <a href={page}>
     <Button buttonStyle="btn-preview-solid" target="_blank" rel="noopener noreferrer">
-      <img src="preview_icon_Light.png" alt="" height="50%" />
+      <FontAwesomeIcon icon={faLink} />
     </Button>
   </a>
 );
@@ -70,7 +72,7 @@ Use example: <DarkmodeDB file={"FILE NAME HERE"}></DownloadButton> */
 export const DarkmodeDB = ({ file }) => (
   <a href={file} download>
     <Button buttonStyle="btn-darkmode-solid">
-      <img src="download_icon.png" alt="" height="80%" />
+      <FontAwesomeIcon icon={faDownload} />
     </Button>
   </a>
 );
@@ -80,7 +82,7 @@ Use example: <DarkmodePB Page={"https://URL-LINK.COM or HTML-PAGE"}></PreviewBut
 export const DarkmodePB = ({ page }) => (
   <a href={page} target="_blank" rel="noopener noreferrer">
     <Button buttonStyle="btn-darkmode-solid">
-      <img src="preview_icon.png" alt="" height="50%" />
+      <FontAwesomeIcon icon={faLink} />
     </Button>
   </a>
 );
