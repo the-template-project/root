@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import styles from './Carousel.module.css';
 
 export default function CarouselItem(props) {

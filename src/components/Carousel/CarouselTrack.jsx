@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useCallback } from 'react';
+import React, { useMemo } from 'react';
 import CarouselItem from './CarouselItem';
 import styles from './Carousel.module.css';
 
@@ -19,7 +19,7 @@ export default function CarouselTrack(props) {
         const distances = new Array(childrenWithKeys.length*2-1).fill(0);
         if (childrenWithKeys.length > 0) {
             distances[0] = childrenWithKeys.length-1;
-            for (let i=1; i<children.length*2-1; ++i){
+            for (let i=1; i<childrenWithKeys.length*2-1; ++i){
                 distances[i] = distances[i-1]+(i<childrenWithKeys.length ? -1 : 1);
             }
         }
@@ -29,7 +29,7 @@ export default function CarouselTrack(props) {
         const temp = distances.slice(childrenWithKeys.length-index-1, 2*childrenWithKeys.length-index-1);
         const minDistance = Math.min(...temp);
         return temp.map(val => val-minDistance);
-    }, [distances, index])
+    }, [childrenWithKeys.length, distances, index])
     const style = {
         'height': `${height}px`,
     };
