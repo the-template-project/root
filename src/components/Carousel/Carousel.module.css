@@ -11,7 +11,7 @@
 .carousel-track {
     position: relative;
     align-self: flex-start;
-    padding: 10px 0;
+    padding-top: 10px;
 }
 
 /* CarouselItem.jsx */
@@ -61,15 +61,12 @@
 .carousel-project-text {
     display: flex;
     flex-direction: column;
+
     background-color: #495057;
     color: white;
     width: 80%;
     padding: 0 20px;
     border-radius: 25px;
-}
-
-.carousel-project-text p {
-    margin: 5px 0;
 }
 
 .carousel-project-text-title {
