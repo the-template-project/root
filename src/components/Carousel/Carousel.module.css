@@ -1,3 +1,4 @@
+/* Carpusel.jsx */
 .carousel {
     background-color: #212529;
     display: flex;
@@ -6,40 +7,58 @@
     align-items: center;
 }
 
-.carousel__buttons {
+/* CarouselTrack.jsx */
+.carousel-track {
+    position: relative;
+    align-self: flex-start;
+    padding: 10px 0;
+}
+
+/* CarouselItem.jsx */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-buttons {
     display: flex;
     justify-content: center;
 }
 
-.carousel__buttons-container {
+.carousel-buttons-container {
     display: grid;
     padding: min(10%, 50px) 0;
     grid-template-columns: repeat(6, 1fr) 3fr repeat(6, 1fr);
 }
 
-.carousel__direction-buttons-container {
+.carousel-buttons-container button {
+    border-color: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.carousel-direction-buttons-container {
     background-color: #6C757D;
     display: flex;
     justify-content: space-between;
     grid-column-start: 7;
-    border-radius: 25px;
+    border-radius: 25%/50%;
 }
 
-.carousel__eye-button {
+.carousel-direction-buttons-container button {
+    background-color: transparent;
+}
+
+.carousel-eye-button {
     grid-column-start: 9;
 }
-.carousel__download-button {
+.carousel-download-button {
     grid-column-start: 11;
 }
 
-.carousel__buttons-container button {
-    border-color: transparent;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-}
-
-.carousel__project-text {
+.carousel-project-text {
     display: flex;
     flex-direction: column;
     background-color: #495057;
@@ -47,20 +66,20 @@
     width: 80%;
     padding: 0 20px;
     border-radius: 25px;
-    font-family: 'Fira Sans';
 }
 
-.carousel__project-text p {
+.carousel-project-text p {
     margin: 5px 0;
 }
 
-.carousel__project-text-title {
+.carousel-project-text-title {
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+    text-transform: uppercase;
 }
 
-.carousel__project-text-content {
+.carousel-project-text-content {
     text-align: justify;
     line-break: strict;
 }

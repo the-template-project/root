@@ -1,32 +1,34 @@
-import React from 'react';
-import styles from './CarouselItem.module.css';
+import React, { useState, useCallback } from 'react';
+import styles from './Carousel.module.css';
 
 export default function CarouselItem(props) {
     const { 
         zIndex,
         brightness,
         translateZ,
-        marginRight,
+        leftPercentage,
+        width,
+        height,
         animationDuration,
         children, 
     } = props;
 
     const style = {
+        'position': 'absolute',
+        'width': `${width}px`,
+        'height': `${height}px`,
         'zIndex': zIndex,
         'filter': `brightness(${brightness})`,
-        'marginRight': marginRight,
+        'left': `${width*leftPercentage}px`,
         'transform': `
-            perspective(500px) translateZ(${-translateZ*500}px)
+            perspective(500px) translateZ(${translateZ*500}px)
         `,
-        'transition': `transform ${animationDuration}s ease, filter ${animationDuration}s ease`
+        'transition': `transform ${animationDuration}s ease, filter ${animationDuration}s ease, left ${animationDuration}s ease, zIndex ${animationDuration}s ease-in-out`
     };
     return (
-        <div className={styles['carousel__item']} style={style}>
+        <div className={styles['carousel-item']} style={style}>
             {React.cloneElement(children, {
-                style: {
-                    'maxHeight': '100vh', 
-                    'maxWidth': '100vw'
-                }
+                className: styles['children'],
             })}
         </div>
     )
