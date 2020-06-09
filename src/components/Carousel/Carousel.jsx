@@ -45,7 +45,7 @@ export default function Carousel(props) {
     }, [setIndex]);
     const handleOnRightClick = useCallback(() => {
         setIndex((index) => index === childrenWithKeys.length - 1 ? index : index + 1);
-    }, [setIndex]);
+    }, [childrenWithKeys.length, setIndex]);
 
     return (
         <div className={styles['carousel']}
