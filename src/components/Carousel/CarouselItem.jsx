@@ -27,9 +27,7 @@ export default function CarouselItem(props) {
     };
     return (
         <div className={styles['carousel-item']} style={style}>
-            {React.cloneElement(children, {
-                className: styles['children'],
-            })}
+            {React.cloneElement(children)}
         </div>
     )
 }
