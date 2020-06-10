@@ -1,0 +1,84 @@
+/* Carpusel.jsx */
+.carousel {
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* CarouselTrack.jsx */
+.carousel-track {
+    position: relative;
+    align-self: flex-start;
+    padding-top: 10px;
+}
+
+/* CarouselItem.jsx */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-buttons-container {
+    display: grid;
+    padding: min(10%, 50px) 0;
+    grid-template-columns: repeat(6, 1fr) 3fr repeat(6, 1fr);
+}
+
+.carousel-buttons-container button {
+    border-color: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.carousel-direction-buttons-container {
+    background-color: #6C757D;
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 7;
+    border-radius: 25%/50%;
+}
+
+.carousel-direction-buttons-container button {
+    background-color: transparent;
+}
+
+.carousel-eye-button {
+    grid-column-start: 9;
+}
+.carousel-download-button {
+    grid-column-start: 11;
+}
+
+.carousel-project-text {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #495057;
+    color: white;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+}
+
+.carousel-project-text-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.carousel-project-text-content {
+    text-align: justify;
+    line-break: strict;
+}
