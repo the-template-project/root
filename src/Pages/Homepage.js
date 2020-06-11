@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import fbIcon from '../static/images/f_logo_RGB-Blue_58.png';
 import twitterIcon from '../static/images/Twitter_Social_Icon_Circle_Color.png';
@@ -8,6 +9,7 @@ import nathanAnderson from '../static/images/nathan-anderson-0wKpv3o8D1I-unsplas
 import thomanBennie from '../static/images/thomas-bennie-4D22-YTLewU-unsplash.jpg';
 import unitedNations from '../static/images/united-nations-covid-19-response-IKyhoO8giSA-unsplash.jpg';
 import '../static/css/homepage.css';
+import { SocialButton } from '../components/Button';
 
 import Carousel from '../components/Carousel';
 
@@ -25,20 +27,8 @@ function Homepage() {
           <p>A one stop shop for beautifully designed ReactJS templates</p>
         </div>
         <div className="social-icons-container">
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={fbIcon} alt="fb icon" />
-          </a>
-          <a
-            href="https://www.twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={twitterIcon} alt="fb icon" />
-          </a>
+          <SocialButton link="https://www.facebook.com/" icon={fbIcon}> </SocialButton>
+          <SocialButton link="https://www.twitter.com/" icon={twitterIcon}> </SocialButton>
         </div>
       </header>
       <Carousel

@@ -1,0 +1,48 @@
+:root {
+    /*Colors can be asigned per variable name here*/
+    --lightmode: #E9ECEF;
+    --darkmode: #495057;
+}
+
+.btn {
+    font-weight: 400;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/*Styling for buttons from BTNSTYLE array in Button.jsx file*/
+.btn-download-solid{
+    background-color: var(--lightmode);
+    color: var(--darkmode);
+    border: none;
+}
+
+.btn-preview-solid{
+    background-color: var(--lightmode);
+    color: var(--darkmode);
+    border: none;
+}
+
+.btn-darkmode-solid{
+    background-color: var(--darkmode);
+    color: white;
+    border: none;
+}
+
+.btn-social{
+    background-color: inherit;
+    border: none;
+}
+
+/*Sizing for buttons from BTNSIZE array in Button.jsx file*/
+.btn-defualt {
+    height: auto;
+    width: auto;
+    padding: 8px 8px;
+    font-size: 18px;
+}
