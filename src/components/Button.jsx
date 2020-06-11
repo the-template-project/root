@@ -18,7 +18,7 @@ const BTNSTYLE = [
 
 /* Button Sizing Array
 Sizing can be created or renamed here */
-const BTNSIZE = ['btn-defualt'];
+const BTNSIZE = ['btn-default'];
 
 export const Button = ({
   children,
@@ -26,12 +26,12 @@ export const Button = ({
   buttonStyle,
   buttonSize,
 }) => {
-  /* Checks for Button Style, defualts to first value in BTNSTYLE array */
+  /* Checks for Button Style, defaults to first value in BTNSTYLE array */
   const checkBTNSTYLE = BTNSTYLE.includes(buttonStyle)
     ? buttonStyle
     : BTNSTYLE[0];
 
-  /* Checks for Button Size, defualts to first value in BTNSIZE array */
+  /* Checks for Button Size, defaults to first value in BTNSIZE array */
   const checkBTNSIZE = BTNSIZE.includes(buttonSize)
     ? buttonSize
     : BTNSIZE[0];
@@ -47,8 +47,8 @@ export const Button = ({
   );
 };
 
-/* Defualt download button, is set to defualt sizing. Needs a file passed in to download
-Use example: <DownloadButton file={"FILE NAME HERE"}></DownloadButton> */
+/* default download button, is set to default sizing. Needs a file passed in to download
+Usage: <DownloadButton file={"FILE NAME HERE"}></DownloadButton> */
 export const DownloadButton = ({ file }) => (
   <a href={file} download>
     <Button>
@@ -57,8 +57,8 @@ export const DownloadButton = ({ file }) => (
   </a>
 );
 
-/* Defualt preview button, is set to defualt sizing. Needs a page location to direct towards
-Use example: <PreviewButton Page={"https://URL-LINK.COM or HTML-PAGE"}></PreviewButton> */
+/* default preview button, is set to default sizing. Needs a page location to direct towards
+Usage: <PreviewButton Page={"https://URL-LINK.COM or HTML-PAGE"}></PreviewButton> */
 export const PreviewButton = ({ page }) => (
   <a href={page}>
     <Button buttonStyle="btn-preview-solid" target="_blank" rel="noopener noreferrer">
@@ -67,8 +67,8 @@ export const PreviewButton = ({ page }) => (
   </a>
 );
 
-/* Defualt DARKMODE download button, is set to defualt sizing. Needs a file passed in to download
-Use example: <DarkmodeDB file={"FILE NAME HERE"}></DownloadButton> */
+/* default DARKMODE download button, is set to default sizing. Needs a file passed in to download
+Usage: <DarkmodeDB file={"FILE NAME HERE"}></DownloadButton> */
 export const DarkmodeDB = ({ file }) => (
   <a href={file} download>
     <Button buttonStyle="btn-darkmode-solid">
@@ -77,8 +77,8 @@ export const DarkmodeDB = ({ file }) => (
   </a>
 );
 
-/* Defualt DARKMODE preview button, is set to defualt sizing. Needs a page location to direct toward
-Use example: <DarkmodePB Page={"https://URL-LINK.COM or HTML-PAGE"}></PreviewButton> */
+/* default DARKMODE preview button, is set to default sizing. Needs a page location to direct toward
+Usage: <DarkmodePB Page={"https://URL-LINK.COM or HTML-PAGE"}></PreviewButton> */
 export const DarkmodePB = ({ page }) => (
   <a href={page} target="_blank" rel="noopener noreferrer">
     <Button buttonStyle="btn-darkmode-solid">
@@ -87,8 +87,8 @@ export const DarkmodePB = ({ page }) => (
   </a>
 );
 
-/* Defualt social media button, is set to defualt sizing. Needs a social link & icon
-Use example: <SocialButton link={"https://URL-LINK.COM or HTML-PAGE"}> icon={"image.jpg"}</SocialButton> */
+/* default social media button, is set to default sizing. Needs a social link & icon
+Usage: <SocialButton link={"https://URL-LINK.COM or HTML-PAGE"}> icon={"image.jpg"}</SocialButton> */
 export const SocialButton = ({
   link,
   icon,

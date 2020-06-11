@@ -5,7 +5,6 @@
 }
 
 .btn {
-    /*General Button Format*/
     font-weight: 400;
     border-radius: 50%;
     cursor: pointer;
@@ -13,7 +12,6 @@
 }
 
 .btn:hover {
-    /*Button interaction upon hovering*/
     transform: translateY(-3px);
 }
 
